@@ -24,7 +24,27 @@ function formatTime(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  return `${hours}:${minutes}`;
+
+  //adding month & year info
+  let months = [
+    "Jan.",
+    "Feb.",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Aug.",
+    "Sept.",
+    "Oct.",
+    "Nov.",
+    "Dec.",
+  ];
+  let currentMonth = months[date.getMonth()];
+  let todaysDate = date.getDate();
+  let currentYear = date.getFullYear();
+
+  return `${currentMonth} ${todaysDate}, ${currentYear} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
