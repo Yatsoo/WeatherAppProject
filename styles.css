@@ -43,6 +43,9 @@ a:hover {
   width: 75px;
 }
 
+#description {
+  text-transform: capitalize;
+}
 .searchbutton .btn {
   margin: 3px;
   background-color: #4664fd;

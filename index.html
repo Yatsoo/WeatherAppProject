@@ -33,7 +33,7 @@
               <div class="card text-left" style="max-width: 18rem">
                 <div class="card-header">
                   <h1>
-                    Dublin
+                    <span id="city"></span>
                     <img
                       src="https://img.icons8.com/nolan/64/rain.png"
                       class="card-img"
@@ -46,7 +46,7 @@
                     <div class="col">
                       <h3>Friday</h3>
                       <p id="month-date">Sept. 20 00.13</p>
-                      <p>Rainy</p>
+                      <p id="description"></p>
                     </div>
                     <div class="col">
                       <h3><span id="temperature"></span></h3>
@@ -93,9 +93,8 @@
                 <div class="card-body">
                   <div class="extrainfo text-left">
                     <ul>
-                      <li>Humidity: 39%</li>
-                      <li>Precipitation: 93%</li>
-                      <li>Wind: 7 km/h</li>
+                      <li>Humidity: <span id="humidity"></span>%</li>
+                      <li>Wind: <span id="windSpeed"></span> km/h</li>
                     </ul>
                   </div>
                 </div>
