@@ -43,7 +43,7 @@ a:hover {
   width: 75px;
 }
 
-#description {
+li:first-letter {
   text-transform: capitalize;
 }
 .searchbutton .btn {
