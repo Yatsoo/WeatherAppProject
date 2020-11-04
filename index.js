@@ -44,7 +44,7 @@ function formatTime(timestamp) {
   let todaysDate = date.getDate();
   let currentYear = date.getFullYear();
 
-  return `${currentMonth} ${todaysDate}, ${currentYear} ${hours}:${minutes}`;
+  return `${currentMonth} ${todaysDate}, ${currentYear} • ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
@@ -90,12 +90,18 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = ` ${Math.round(fahrenheitTemperature)}°F`;
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = `${Math.round(celsiusTemperature)}°C`;
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 let celsiusTemperature = null;

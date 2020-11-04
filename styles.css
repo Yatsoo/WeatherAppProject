@@ -21,6 +21,12 @@ input {
 a:hover {
   text-decoration: none;
 }
+
+.active {
+  color: black;
+  cursor: default;
+}
+
 .container {
   background-image: url("https://image.freepik.com/vecteurs-libre/ciel-pastel-fond-nuages-blancs_56745-87.jpg");
   background-size: cover;
